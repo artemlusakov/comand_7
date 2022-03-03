@@ -1,0 +1,49 @@
+.Box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:25vh ;
+
+}
+
+.compani{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.img{
+    margin-right:10px;
+    background-color: #1F1C18;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    height: 30px;
+    font-size: 20px;
+    border-radius:5px ;
+}
+
+button{
+    margin-top: 20px;
+    height: 25px;
+    width: 200px;
+}
+
+.Content{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius:5px ;
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+
+}
