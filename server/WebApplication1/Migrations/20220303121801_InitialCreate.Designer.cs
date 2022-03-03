@@ -12,7 +12,7 @@ using WebAppkication1.data;
 namespace WebApplication1.Migrations
 {
     [DbContext(typeof(DataBaseContext))]
-    [Migration("20220303101724_InitialCreate")]
+    [Migration("20220303121801_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
