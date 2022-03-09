@@ -1,9 +1,14 @@
 .Box{
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding-top:25vh ;
+    padding-top: 20vh;
+}
 
+.Content{
+    display: flex;
+    justify-content: center;
+    border: #000 solid 1px;
+    border-radius:2px;
 }
 
 .time{
