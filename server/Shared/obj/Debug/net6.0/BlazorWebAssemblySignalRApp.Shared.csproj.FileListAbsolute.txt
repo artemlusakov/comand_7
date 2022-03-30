@@ -1,0 +1,12 @@
+C:\Users\Jodale\source\repos\BlazorWebAssemblySignalRApp\BlazorWebAssemblySignalRApp\Shared\bin\Debug\net6.0\BlazorWebAssemblySignalRApp.Shared.deps.json
+C:\Users\Jodale\source\repos\BlazorWebAssemblySignalRApp\BlazorWebAssemblySignalRApp\Shared\bin\Debug\net6.0\BlazorWebAssemblySignalRApp.Shared.dll
+C:\Users\Jodale\source\repos\BlazorWebAssemblySignalRApp\BlazorWebAssemblySignalRApp\Shared\bin\Debug\net6.0\BlazorWebAssemblySignalRApp.Shared.pdb
+C:\Users\Jodale\source\repos\BlazorWebAssemblySignalRApp\BlazorWebAssemblySignalRApp\Shared\obj\Debug\net6.0\BlazorWebAssemblySignalRApp.Shared.csproj.AssemblyReference.cache
+C:\Users\Jodale\source\repos\BlazorWebAssemblySignalRApp\BlazorWebAssemblySignalRApp\Shared\obj\Debug\net6.0\BlazorWebAssemblySignalRApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jodale\source\repos\BlazorWebAssemblySignalRApp\BlazorWebAssemblySignalRApp\Shared\obj\Debug\net6.0\BlazorWebAssemblySignalRApp.Shared.AssemblyInfoInputs.cache
+C:\Users\Jodale\source\repos\BlazorWebAssemblySignalRApp\BlazorWebAssemblySignalRApp\Shared\obj\Debug\net6.0\BlazorWebAssemblySignalRApp.Shared.AssemblyInfo.cs
+C:\Users\Jodale\source\repos\BlazorWebAssemblySignalRApp\BlazorWebAssemblySignalRApp\Shared\obj\Debug\net6.0\BlazorWebAssemblySignalRApp.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Jodale\source\repos\BlazorWebAssemblySignalRApp\BlazorWebAssemblySignalRApp\Shared\obj\Debug\net6.0\BlazorWebAssemblySignalRApp.Shared.dll
+C:\Users\Jodale\source\repos\BlazorWebAssemblySignalRApp\BlazorWebAssemblySignalRApp\Shared\obj\Debug\net6.0\refint\BlazorWebAssemblySignalRApp.Shared.dll
+C:\Users\Jodale\source\repos\BlazorWebAssemblySignalRApp\BlazorWebAssemblySignalRApp\Shared\obj\Debug\net6.0\BlazorWebAssemblySignalRApp.Shared.pdb
+C:\Users\Jodale\source\repos\BlazorWebAssemblySignalRApp\BlazorWebAssemblySignalRApp\Shared\obj\Debug\net6.0\ref\BlazorWebAssemblySignalRApp.Shared.dll
