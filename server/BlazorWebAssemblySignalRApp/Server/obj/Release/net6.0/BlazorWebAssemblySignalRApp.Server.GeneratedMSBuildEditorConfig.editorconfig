@@ -8,13 +8,13 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BlazorWebAssemblySignalRApp.Server
 build_property.RootNamespace = BlazorWebAssemblySignalRApp.Server
-build_property.ProjectDir = C:\Users\zero\source\repos\comand_7\server\BlazorWebAssemblySignalRApp\Server\
+build_property.ProjectDir = C:\Users\zero\Source\Repos\comand_7\server\BlazorWebAssemblySignalRApp\Server\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\zero\source\repos\comand_7\server\BlazorWebAssemblySignalRApp\Server
+build_property.MSBuildProjectDirectory = C:\Users\zero\Source\Repos\comand_7\server\BlazorWebAssemblySignalRApp\Server
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/zero/source/repos/comand_7/server/BlazorWebAssemblySignalRApp/Server/Pages/Error.cshtml]
+[C:/Users/zero/Source/Repos/comand_7/server/BlazorWebAssemblySignalRApp/Server/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

@@ -10,8 +10,11 @@ using BlazorWebAssemblySignalRApp.Data;
 using BlazorWebAssemblySignalRApp.Models;
 
 namespace BlazorWebAssemblySignalRApp.Server.Controllers
+
 {
-    public class AuthorizationController : Controller
+ [Route("api/[controller]")]
+    [ApiController]
+public class AuthorizationController : Controller
     {
         private readonly DataBaseContext _context;
 
