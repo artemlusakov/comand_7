@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\STUDENT\\Source\\Repos\\comand_10\\server\\BlazorWebAssemblySignalRApp\\Shared\\BlazorWebAssemblySignalRApp.Shared.csproj": {}
+    "C:\\Users\\zero\\Source\\Repos\\comand_7\\server\\BlazorWebAssemblySignalRApp\\Shared\\BlazorWebAssemblySignalRApp.Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\STUDENT\\Source\\Repos\\comand_10\\server\\BlazorWebAssemblySignalRApp\\Shared\\BlazorWebAssemblySignalRApp.Shared.csproj": {
+    "C:\\Users\\zero\\Source\\Repos\\comand_7\\server\\BlazorWebAssemblySignalRApp\\Shared\\BlazorWebAssemblySignalRApp.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\STUDENT\\Source\\Repos\\comand_10\\server\\BlazorWebAssemblySignalRApp\\Shared\\BlazorWebAssemblySignalRApp.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\zero\\Source\\Repos\\comand_7\\server\\BlazorWebAssemblySignalRApp\\Shared\\BlazorWebAssemblySignalRApp.Shared.csproj",
         "projectName": "BlazorWebAssemblySignalRApp.Shared",
-        "projectPath": "C:\\Users\\STUDENT\\Source\\Repos\\comand_10\\server\\BlazorWebAssemblySignalRApp\\Shared\\BlazorWebAssemblySignalRApp.Shared.csproj",
-        "packagesPath": "C:\\Users\\STUDENT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\STUDENT\\Source\\Repos\\comand_10\\server\\BlazorWebAssemblySignalRApp\\Shared\\obj\\",
+        "projectPath": "C:\\Users\\zero\\Source\\Repos\\comand_7\\server\\BlazorWebAssemblySignalRApp\\Shared\\BlazorWebAssemblySignalRApp.Shared.csproj",
+        "packagesPath": "C:\\Users\\zero\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zero\\Source\\Repos\\comand_7\\server\\BlazorWebAssemblySignalRApp\\Shared\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\STUDENT\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\zero\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

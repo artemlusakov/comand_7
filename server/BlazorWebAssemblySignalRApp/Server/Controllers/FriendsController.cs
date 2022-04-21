@@ -79,6 +79,15 @@ namespace BlazorWebAssemblySignalRApp.Server.Controllers
         [HttpPost]
         public async Task<ActionResult<Friends>> PostFriends(Friends friends)
         {
+            var user = await _context.Users.FindAsync(friends.user_id);
+
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            friends.User = user;
+
             _context.Friends.Add(friends);
             await _context.SaveChangesAsync();
 

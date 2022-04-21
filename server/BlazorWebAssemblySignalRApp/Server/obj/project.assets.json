@@ -11071,24 +11071,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\STUDENT\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\zero\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\STUDENT\\Source\\Repos\\comand_10\\server\\BlazorWebAssemblySignalRApp\\Server\\BlazorWebAssemblySignalRApp.Server.csproj",
+      "projectUniqueName": "C:\\Users\\zero\\Source\\Repos\\comand_7\\server\\BlazorWebAssemblySignalRApp\\Server\\BlazorWebAssemblySignalRApp.Server.csproj",
       "projectName": "BlazorWebAssemblySignalRApp.Server",
-      "projectPath": "C:\\Users\\STUDENT\\Source\\Repos\\comand_10\\server\\BlazorWebAssemblySignalRApp\\Server\\BlazorWebAssemblySignalRApp.Server.csproj",
-      "packagesPath": "C:\\Users\\STUDENT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\STUDENT\\Source\\Repos\\comand_10\\server\\BlazorWebAssemblySignalRApp\\Server\\obj\\",
+      "projectPath": "C:\\Users\\zero\\Source\\Repos\\comand_7\\server\\BlazorWebAssemblySignalRApp\\Server\\BlazorWebAssemblySignalRApp.Server.csproj",
+      "packagesPath": "C:\\Users\\zero\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\zero\\Source\\Repos\\comand_7\\server\\BlazorWebAssemblySignalRApp\\Server\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\STUDENT\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\zero\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11102,11 +11097,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\STUDENT\\Source\\Repos\\comand_10\\server\\BlazorWebAssemblySignalRApp\\Client\\BlazorWebAssemblySignalRApp.Client.csproj": {
-              "projectPath": "C:\\Users\\STUDENT\\Source\\Repos\\comand_10\\server\\BlazorWebAssemblySignalRApp\\Client\\BlazorWebAssemblySignalRApp.Client.csproj"
+            "C:\\Users\\zero\\Source\\Repos\\comand_7\\server\\BlazorWebAssemblySignalRApp\\Client\\BlazorWebAssemblySignalRApp.Client.csproj": {
+              "projectPath": "C:\\Users\\zero\\Source\\Repos\\comand_7\\server\\BlazorWebAssemblySignalRApp\\Client\\BlazorWebAssemblySignalRApp.Client.csproj"
             },
-            "C:\\Users\\STUDENT\\Source\\Repos\\comand_10\\server\\BlazorWebAssemblySignalRApp\\Shared\\BlazorWebAssemblySignalRApp.Shared.csproj": {
-              "projectPath": "C:\\Users\\STUDENT\\Source\\Repos\\comand_10\\server\\BlazorWebAssemblySignalRApp\\Shared\\BlazorWebAssemblySignalRApp.Shared.csproj"
+            "C:\\Users\\zero\\Source\\Repos\\comand_7\\server\\BlazorWebAssemblySignalRApp\\Shared\\BlazorWebAssemblySignalRApp.Shared.csproj": {
+              "projectPath": "C:\\Users\\zero\\Source\\Repos\\comand_7\\server\\BlazorWebAssemblySignalRApp\\Shared\\BlazorWebAssemblySignalRApp.Shared.csproj"
             }
           }
         }
