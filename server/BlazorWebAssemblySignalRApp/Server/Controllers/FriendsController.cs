@@ -69,6 +69,7 @@ namespace BlazorWebAssemblySignalRApp.Server.Controllers
                 {
                     throw;
                 }
+
             }
 
             return NoContent();
