@@ -7,7 +7,7 @@ namespace BlazorWebAssemblySignalRApp.Models
         [Key]
         public int photo_id { get; set; }
         public int massage_id { get; set; }
-        public Massages? Massages { get; set; }
+        public List<Massages> Massages { get; set; }
         public List<Photo> Photos { get; set; }
     }
 }
