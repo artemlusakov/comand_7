@@ -24,14 +24,14 @@ namespace BlazorWebAssemblySignalRApp.Server.Controllers
 
         // GET: api/Photos
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Photos>>> GetPhotos()
+        public async Task<ActionResult<IEnumerable<Photo>>> GetPhotos()
         {
             return await _context.Photos.ToListAsync();
         }
 
         // GET: api/Photos/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Photos>> GetPhotos(int id)
+        public async Task<ActionResult<Photo>> GetPhotos(int id)
         {
             var photos = await _context.Photos.FindAsync(id);
 
@@ -46,7 +46,7 @@ namespace BlazorWebAssemblySignalRApp.Server.Controllers
         // PUT: api/Photos/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutPhotos(int id, Photos photos)
+        public async Task<IActionResult> PutPhotos(int id, Photo photos)
         {
             if (id != photos.Photo_id)
             {
@@ -77,7 +77,7 @@ namespace BlazorWebAssemblySignalRApp.Server.Controllers
         // POST: api/Photos
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Photos>> PostPhotos(Photos photos)
+        public async Task<ActionResult<Photo>> PostPhotos(Photo photos)
         {
             _context.Photos.Add(photos);
             await _context.SaveChangesAsync();

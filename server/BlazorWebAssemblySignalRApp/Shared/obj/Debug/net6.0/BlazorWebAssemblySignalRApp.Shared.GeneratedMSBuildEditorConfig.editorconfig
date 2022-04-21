@@ -7,4 +7,4 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows,browser
 build_property.RootNamespace = BlazorWebAssemblySignalRApp.Shared
-build_property.ProjectDir = C:\Users\Jodale\Source\Repos\comand_7\server\BlazorWebAssemblySignalRApp\Shared\
+build_property.ProjectDir = C:\Users\STUDENT\Source\Repos\comand_10\server\BlazorWebAssemblySignalRApp\Shared\

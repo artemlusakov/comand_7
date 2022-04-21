@@ -2,7 +2,7 @@
 
 namespace BlazorWebAssemblySignalRApp.Models
 {
-    public class Photos
+    public class Photo
     {
         [Key]
         public int Photo_id { get; set; }
