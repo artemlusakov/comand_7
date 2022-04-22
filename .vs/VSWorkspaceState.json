@@ -1,8 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\server"
+    ""
   ],
-  "SelectedNode": "\\server\\BlazorWebAssemblySignalRApp.sln",
+  "SelectedNode": "\\BlazorWebAssemblySignalRApp.sln",
   "PreviewInSolutionExplorer": false
 }

@@ -12,7 +12,7 @@ namespace BlazorWebAssemblySignalRApp.Models
         public DateTime time_creation { get; set; }
 
         public List<Friends> friends { get; set; }
-        public Role? roles { get; set; }
+        public Role? Roles { get; set; }
         public List<UserToDialogs> userToDialogs { get; set; }
     }
 }

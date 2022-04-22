@@ -40,13 +40,13 @@ namespace BlazorWebAssemblySignalRApp.Data
                 .HasForeignKey(a => a.user_id);
 
             modelBuilder.Entity<User>()
-                .HasOne(d => d.roles)
-                .WithMany(f => f.user)
+                .HasOne(d => d.Roles)
+                .WithMany(f => f.User)
                 .HasForeignKey(q => q.Id_user);
 
             modelBuilder.Entity<Role>()
                 .HasOne(d => d.dialogs)
-                .WithMany(f => f.roles)
+                .WithMany(f => f.Roles)
                 .HasForeignKey(w => w.Id_dialogs);
 
             modelBuilder.Entity<UserToDialogs>()

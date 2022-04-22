@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BS65ylQkIoJ7TyPo4SKu+mG9rVzYy3UeQVsx/zNePTbUuC/tHC/xaKswyRVBkrmen42Zva9TlcutZkxugXepFw==",
+  "dgSpecHash": "ZzSRZqmPS5+JSz+iP6q/5YUpHR3Lu4eh7EwH6SmD4qC0BIRgGUtxbEpJ22Fe4VWdhMyuLwyDF/02c75ml2B5WQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\STUDENT\\source\\repos\\comand_7\\server\\BlazorWebAssemblySignalRApp\\Shared\\BlazorWebAssemblySignalRApp.Shared.csproj",
+  "projectFilePath": "C:\\Users\\STUDENT\\source\\repos\\comand_11\\server\\BlazorWebAssemblySignalRApp\\Shared\\BlazorWebAssemblySignalRApp.Shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

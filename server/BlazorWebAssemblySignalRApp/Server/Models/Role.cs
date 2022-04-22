@@ -11,6 +11,7 @@ namespace BlazorWebAssemblySignalRApp.Models
         public bool role { get; set; }
 
         public Dialogs? dialogs { get; set; }
-        public List<User> user { get; set; }
+        public List<User> User { get; set; }
+
     }
 }
