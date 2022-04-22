@@ -10,6 +10,7 @@ namespace BlazorWebAssemblySignalRApp.Models
         public int user_id { get; set; }
         public int dialogs_id { get; set; }
         public DateTime time_creation { get; set; } = DateTime.Now;
+
         public Dialogs? Dialogs { get; set; }
         public User? User { get; set; }
     }

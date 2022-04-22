@@ -12,7 +12,7 @@ namespace BlazorWebAssemblySignalRApp.Data
         public DbSet<MassageToPhotos> MassageToPhotos { get; set; } = null!;
         public DbSet<Photo> Photos { get; set; } = null!;
         public DbSet<Role> Roles { get; set; } = null!;
-        public DbSet<User> Users { get; set; } = null!;
+        public DbSet<User> User { get; set; } = null!;
         public DbSet<UserToDialogs> UserToDialogs { get; set; } = null!;
 
 
@@ -39,24 +39,24 @@ namespace BlazorWebAssemblySignalRApp.Data
                 .WithMany(f => f.friends)
                 .HasForeignKey(a => a.user_id);
 
-            modelBuilder.Entity<Role>()
-                .HasOne(d => d.User)
-                .WithMany(f => f.roles)
-                .HasForeignKey(q => q.user_id);
+            modelBuilder.Entity<User>()
+                .HasOne(d => d.roles)
+                .WithMany(f => f.user)
+                .HasForeignKey(q => q.Id_user);
 
             modelBuilder.Entity<Role>()
-                .HasOne(d => d.Dialogs)
+                .HasOne(d => d.dialogs)
                 .WithMany(f => f.roles)
                 .HasForeignKey(w => w.Id_dialogs);
 
             modelBuilder.Entity<UserToDialogs>()
                 .HasOne(d => d.User)
-                .WithMany(f => f.usersToDialogs)
+                .WithMany(f => f.userToDialogs)
                 .HasForeignKey(r => r.user_id);
 
             modelBuilder.Entity<UserToDialogs>()
                 .HasOne(d => d.Dialogs)
-                .WithMany(f => f.usersToDialogs)
+                .WithMany(f => f.userToDialogs)
                 .HasForeignKey(t => t.dialogs_id);
         }
     }

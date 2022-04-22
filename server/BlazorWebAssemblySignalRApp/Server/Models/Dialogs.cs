@@ -11,6 +11,6 @@ namespace BlazorWebAssemblySignalRApp.Models
 
         public List<Role> roles { get; set; }
         public List<Massages> massages { get; set; }
-        public List<UserToDialogs> usersToDialogs { get; set; }
+        public List<UserToDialogs> userToDialogs { get; set; }
     }
 }

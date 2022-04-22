@@ -9,7 +9,8 @@ namespace BlazorWebAssemblySignalRApp.Models
         public int user_id { get; set; }
         public int Id_dialogs { get; set; }
         public bool role { get; set; }
-        public Dialogs? Dialogs { get; set; }
-        public User? User { get; set; }
+
+        public Dialogs? dialogs { get; set; }
+        public List<User> user { get; set; }
     }
 }

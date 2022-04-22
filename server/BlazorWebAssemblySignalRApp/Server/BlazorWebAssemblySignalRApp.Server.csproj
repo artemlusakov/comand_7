@@ -34,5 +34,9 @@
     <ProjectReference Include="..\Shared\BlazorWebAssemblySignalRApp.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
 
 </Project>

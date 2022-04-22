@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlazorWebAssemblySignalRApp.Server.Migrations
 {
     [DbContext(typeof(DataBaseContext))]
-    [Migration("20220422063803_ono")]
-    partial class ono
+    [Migration("20220422065554_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
