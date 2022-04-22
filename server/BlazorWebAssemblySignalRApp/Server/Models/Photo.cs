@@ -9,5 +9,7 @@ namespace BlazorWebAssemblySignalRApp.Models
         public string Path { get; set; }
         public string Description { get; set; } = string.Empty;
         public DateTime time_creation { get; set; }
+
+        public MassageToPhotos? massageToPhotos { get; set; }
     }
 }

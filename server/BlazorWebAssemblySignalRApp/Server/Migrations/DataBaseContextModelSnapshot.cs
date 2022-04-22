@@ -94,7 +94,10 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
             modelBuilder.Entity("BlazorWebAssemblySignalRApp.Models.MassageToPhotos", b =>
                 {
                     b.Property<int>("photo_id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("photo_id"), 1L, 1);
 
                     b.Property<int>("massage_id")
                         .HasColumnType("int");
@@ -106,13 +109,10 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
                     b.ToTable("MassageToPhotos");
                 });
 
-            modelBuilder.Entity("BlazorWebAssemblySignalRApp.Models.Photos", b =>
+            modelBuilder.Entity("BlazorWebAssemblySignalRApp.Models.Photo", b =>
                 {
                     b.Property<int>("Photo_id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Photo_id"), 1L, 1);
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -213,7 +213,7 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
             modelBuilder.Entity("BlazorWebAssemblySignalRApp.Models.Friends", b =>
                 {
                     b.HasOne("BlazorWebAssemblySignalRApp.Models.User", "User")
-                        .WithMany()
+                        .WithMany("friends")
                         .HasForeignKey("user_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -224,7 +224,7 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
             modelBuilder.Entity("BlazorWebAssemblySignalRApp.Models.Massages", b =>
                 {
                     b.HasOne("BlazorWebAssemblySignalRApp.Models.Dialogs", "Dialogs")
-                        .WithMany()
+                        .WithMany("massages")
                         .HasForeignKey("dialog_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -235,32 +235,35 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
             modelBuilder.Entity("BlazorWebAssemblySignalRApp.Models.MassageToPhotos", b =>
                 {
                     b.HasOne("BlazorWebAssemblySignalRApp.Models.Massages", "Massages")
-                        .WithMany()
+                        .WithMany("massageToPhotos")
                         .HasForeignKey("massage_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("BlazorWebAssemblySignalRApp.Models.Photos", "Photos")
-                        .WithMany()
-                        .HasForeignKey("photo_id")
+                    b.Navigation("Massages");
+                });
+
+            modelBuilder.Entity("BlazorWebAssemblySignalRApp.Models.Photo", b =>
+                {
+                    b.HasOne("BlazorWebAssemblySignalRApp.Models.MassageToPhotos", "massageToPhotos")
+                        .WithMany("Photos")
+                        .HasForeignKey("Photo_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Massages");
-
-                    b.Navigation("Photos");
+                    b.Navigation("massageToPhotos");
                 });
 
             modelBuilder.Entity("BlazorWebAssemblySignalRApp.Models.Role", b =>
                 {
                     b.HasOne("BlazorWebAssemblySignalRApp.Models.Dialogs", "Dialogs")
-                        .WithMany()
+                        .WithMany("roles")
                         .HasForeignKey("Id_dialogs")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("BlazorWebAssemblySignalRApp.Models.User", "User")
-                        .WithMany()
+                        .WithMany("roles")
                         .HasForeignKey("user_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -273,13 +276,13 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
             modelBuilder.Entity("BlazorWebAssemblySignalRApp.Models.UserToDialogs", b =>
                 {
                     b.HasOne("BlazorWebAssemblySignalRApp.Models.Dialogs", "Dialogs")
-                        .WithMany()
+                        .WithMany("usersToDialogs")
                         .HasForeignKey("dialogs_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("BlazorWebAssemblySignalRApp.Models.User", "User")
-                        .WithMany()
+                        .WithMany("usersToDialogs")
                         .HasForeignKey("user_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -287,6 +290,34 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
                     b.Navigation("Dialogs");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("BlazorWebAssemblySignalRApp.Models.Dialogs", b =>
+                {
+                    b.Navigation("massages");
+
+                    b.Navigation("roles");
+
+                    b.Navigation("usersToDialogs");
+                });
+
+            modelBuilder.Entity("BlazorWebAssemblySignalRApp.Models.Massages", b =>
+                {
+                    b.Navigation("massageToPhotos");
+                });
+
+            modelBuilder.Entity("BlazorWebAssemblySignalRApp.Models.MassageToPhotos", b =>
+                {
+                    b.Navigation("Photos");
+                });
+
+            modelBuilder.Entity("BlazorWebAssemblySignalRApp.Models.User", b =>
+                {
+                    b.Navigation("friends");
+
+                    b.Navigation("roles");
+
+                    b.Navigation("usersToDialogs");
                 });
 #pragma warning restore 612, 618
         }

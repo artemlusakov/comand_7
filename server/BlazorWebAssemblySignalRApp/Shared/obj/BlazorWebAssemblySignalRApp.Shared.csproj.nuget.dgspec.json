@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zero\\Source\\Repos\\comand_7\\server\\BlazorWebAssemblySignalRApp\\Shared\\BlazorWebAssemblySignalRApp.Shared.csproj": {}
+    "C:\\Users\\STUDENT\\source\\repos\\comand_7\\server\\BlazorWebAssemblySignalRApp\\Shared\\BlazorWebAssemblySignalRApp.Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zero\\Source\\Repos\\comand_7\\server\\BlazorWebAssemblySignalRApp\\Shared\\BlazorWebAssemblySignalRApp.Shared.csproj": {
+    "C:\\Users\\STUDENT\\source\\repos\\comand_7\\server\\BlazorWebAssemblySignalRApp\\Shared\\BlazorWebAssemblySignalRApp.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zero\\Source\\Repos\\comand_7\\server\\BlazorWebAssemblySignalRApp\\Shared\\BlazorWebAssemblySignalRApp.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\STUDENT\\source\\repos\\comand_7\\server\\BlazorWebAssemblySignalRApp\\Shared\\BlazorWebAssemblySignalRApp.Shared.csproj",
         "projectName": "BlazorWebAssemblySignalRApp.Shared",
-        "projectPath": "C:\\Users\\zero\\Source\\Repos\\comand_7\\server\\BlazorWebAssemblySignalRApp\\Shared\\BlazorWebAssemblySignalRApp.Shared.csproj",
-        "packagesPath": "C:\\Users\\zero\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zero\\Source\\Repos\\comand_7\\server\\BlazorWebAssemblySignalRApp\\Shared\\obj\\",
+        "projectPath": "C:\\Users\\STUDENT\\source\\repos\\comand_7\\server\\BlazorWebAssemblySignalRApp\\Shared\\BlazorWebAssemblySignalRApp.Shared.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\STUDENT\\source\\repos\\comand_7\\server\\BlazorWebAssemblySignalRApp\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\zero\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

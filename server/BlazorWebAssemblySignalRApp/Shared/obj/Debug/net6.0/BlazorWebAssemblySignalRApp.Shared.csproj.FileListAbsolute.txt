@@ -22,3 +22,15 @@ C:\Users\zero\Source\Repos\comand_7\server\BlazorWebAssemblySignalRApp\Shared\ob
 C:\Users\zero\Source\Repos\comand_7\server\BlazorWebAssemblySignalRApp\Shared\obj\Debug\net6.0\refint\BlazorWebAssemblySignalRApp.Shared.dll
 C:\Users\zero\Source\Repos\comand_7\server\BlazorWebAssemblySignalRApp\Shared\obj\Debug\net6.0\BlazorWebAssemblySignalRApp.Shared.pdb
 C:\Users\zero\Source\Repos\comand_7\server\BlazorWebAssemblySignalRApp\Shared\obj\Debug\net6.0\ref\BlazorWebAssemblySignalRApp.Shared.dll
+C:\Users\STUDENT\Source\Repos\comand_7\server\BlazorWebAssemblySignalRApp\Shared\bin\Debug\net6.0\BlazorWebAssemblySignalRApp.Shared.deps.json
+C:\Users\STUDENT\Source\Repos\comand_7\server\BlazorWebAssemblySignalRApp\Shared\bin\Debug\net6.0\BlazorWebAssemblySignalRApp.Shared.dll
+C:\Users\STUDENT\Source\Repos\comand_7\server\BlazorWebAssemblySignalRApp\Shared\bin\Debug\net6.0\BlazorWebAssemblySignalRApp.Shared.pdb
+C:\Users\STUDENT\Source\Repos\comand_7\server\BlazorWebAssemblySignalRApp\Shared\obj\Debug\net6.0\BlazorWebAssemblySignalRApp.Shared.csproj.AssemblyReference.cache
+C:\Users\STUDENT\Source\Repos\comand_7\server\BlazorWebAssemblySignalRApp\Shared\obj\Debug\net6.0\BlazorWebAssemblySignalRApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\STUDENT\Source\Repos\comand_7\server\BlazorWebAssemblySignalRApp\Shared\obj\Debug\net6.0\BlazorWebAssemblySignalRApp.Shared.AssemblyInfoInputs.cache
+C:\Users\STUDENT\Source\Repos\comand_7\server\BlazorWebAssemblySignalRApp\Shared\obj\Debug\net6.0\BlazorWebAssemblySignalRApp.Shared.AssemblyInfo.cs
+C:\Users\STUDENT\Source\Repos\comand_7\server\BlazorWebAssemblySignalRApp\Shared\obj\Debug\net6.0\BlazorWebAssemblySignalRApp.Shared.csproj.CoreCompileInputs.cache
+C:\Users\STUDENT\Source\Repos\comand_7\server\BlazorWebAssemblySignalRApp\Shared\obj\Debug\net6.0\BlazorWebAssemblySignalRApp.Shared.dll
+C:\Users\STUDENT\Source\Repos\comand_7\server\BlazorWebAssemblySignalRApp\Shared\obj\Debug\net6.0\refint\BlazorWebAssemblySignalRApp.Shared.dll
+C:\Users\STUDENT\Source\Repos\comand_7\server\BlazorWebAssemblySignalRApp\Shared\obj\Debug\net6.0\BlazorWebAssemblySignalRApp.Shared.pdb
+C:\Users\STUDENT\Source\Repos\comand_7\server\BlazorWebAssemblySignalRApp\Shared\obj\Debug\net6.0\ref\BlazorWebAssemblySignalRApp.Shared.dll

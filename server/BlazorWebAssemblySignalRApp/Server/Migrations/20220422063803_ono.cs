@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace BlazorWebAssemblySignalRApp.Server.Migrations
 {
-    public partial class IntalCrae : Migration
+    public partial class ono : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -21,21 +21,6 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Dialogs", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Photos",
-                columns: table => new
-                {
-                    Photo_id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Path = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    time_creation = table.Column<DateTime>(type: "datetime2", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Photos", x => x.Photo_id);
                 });
 
             migrationBuilder.CreateTable(
@@ -154,7 +139,8 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
                 name: "MassageToPhotos",
                 columns: table => new
                 {
-                    photo_id = table.Column<int>(type: "int", nullable: false),
+                    photo_id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     massage_id = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -166,11 +152,25 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
                         principalTable: "Massages",
                         principalColumn: "Id_massages",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Photos",
+                columns: table => new
+                {
+                    Photo_id = table.Column<int>(type: "int", nullable: false),
+                    Path = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    time_creation = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Photos", x => x.Photo_id);
                     table.ForeignKey(
-                        name: "FK_MassageToPhotos_Photos_photo_id",
-                        column: x => x.photo_id,
-                        principalTable: "Photos",
-                        principalColumn: "Photo_id",
+                        name: "FK_Photos_MassageToPhotos_Photo_id",
+                        column: x => x.Photo_id,
+                        principalTable: "MassageToPhotos",
+                        principalColumn: "photo_id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -216,7 +216,7 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
                 name: "Friends");
 
             migrationBuilder.DropTable(
-                name: "MassageToPhotos");
+                name: "Photos");
 
             migrationBuilder.DropTable(
                 name: "Roles");
@@ -225,13 +225,13 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
                 name: "UserToDialogs");
 
             migrationBuilder.DropTable(
-                name: "Massages");
-
-            migrationBuilder.DropTable(
-                name: "Photos");
+                name: "MassageToPhotos");
 
             migrationBuilder.DropTable(
                 name: "Users");
+
+            migrationBuilder.DropTable(
+                name: "Massages");
 
             migrationBuilder.DropTable(
                 name: "Dialogs");

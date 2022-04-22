@@ -11,5 +11,7 @@ namespace BlazorWebAssemblySignalRApp.Models
         public DateTime time_creation { get; set; }
         public bool text_changed { get; set; }
         public Dialogs? Dialogs { get; set; }
+
+        public List<MassageToPhotos> massageToPhotos { get; set; }
     }
 }

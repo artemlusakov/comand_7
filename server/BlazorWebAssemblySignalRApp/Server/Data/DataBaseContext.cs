@@ -19,43 +19,44 @@ namespace BlazorWebAssemblySignalRApp.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<MassageToPhotos>()
-                .HasOne(d => d.Photos)
-                .WithMany(d => MassageToPhotos)
-                .HasForeignKey(b => b.photo_id);
+            modelBuilder.Entity<Photo>()
+                .HasOne(d => d.massageToPhotos)
+                .WithMany(f => f.Photos)
+                .HasForeignKey(b => b.Photo_id);
 
             modelBuilder.Entity<MassageToPhotos>()
                 .HasOne(d => d.Massages)
-                .WithMany(d => MassageToPhotos)
+                .WithMany(f => f.massageToPhotos)
                 .HasForeignKey(l => l.massage_id);
 
             modelBuilder.Entity<Massages>()
                 .HasOne(d => d.Dialogs)
-                .WithMany(d => Massages)
+                .WithMany(f => f.massages)
                 .HasForeignKey(s => s.dialog_id);
 
             modelBuilder.Entity<Friends>()
                 .HasOne(d => d.User)
-                .WithMany(d => Friends)
+                .WithMany(f => f.friends)
                 .HasForeignKey(a => a.user_id);
+
             modelBuilder.Entity<Role>()
                 .HasOne(d => d.User)
-                .WithMany(d => Roles)
+                .WithMany(f => f.roles)
                 .HasForeignKey(q => q.user_id);
 
             modelBuilder.Entity<Role>()
                 .HasOne(d => d.Dialogs)
-                .WithMany(d => Roles)
+                .WithMany(f => f.roles)
                 .HasForeignKey(w => w.Id_dialogs);
 
             modelBuilder.Entity<UserToDialogs>()
                 .HasOne(d => d.User)
-                .WithMany(d => UserToDialogs)
+                .WithMany(f => f.usersToDialogs)
                 .HasForeignKey(r => r.user_id);
 
             modelBuilder.Entity<UserToDialogs>()
                 .HasOne(d => d.Dialogs)
-                .WithMany(d => UserToDialogs)
+                .WithMany(f => f.usersToDialogs)
                 .HasForeignKey(t => t.dialogs_id);
         }
     }
