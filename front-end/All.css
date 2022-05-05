@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: #FFF3E4;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+
+h1{
+    font-family: 'Monoton', cursive;
+    color: #EED6C4;
+}
+
+.Group{
+    display: flex;
+}
+
+.Section1{
+    height: 100vh;
+    background-color: #483434;
+    width: 20vw;
+}
+
+.Logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Logo img{
+    height: 100px;
+    width: 100px;
+}
+
+.Section2{
+    height: 100vh;
+    background-color: #6B4F4F;
+    width: 80vw;
+}
+
+
+nav{
+    display:flex ;
+    flex-direction: column;
+}
+
+nav a{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    height: 80px;
+    width: 100%;
+    font-size: 25px;
+}
+
+nav a:hover{
+    background-color: #6B4F4F;
+    color: #EED6C4;
+
+}
