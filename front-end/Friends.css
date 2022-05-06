@@ -1,0 +1,32 @@
+.Group_Friends{
+    width: 15vw;
+    height: 99.6vh;
+    border: #392828 solid 2px;
+    margin-left: 5px;
+}
+
+.Dialog{
+    width: 40vw;
+    height: 80vh;
+    flex-direction: column;
+
+}
+
+.Group_section2{
+    margin-left: 10px;
+    border:#392828 solid 2px ;
+    width: 60vw;
+    height: 85vh;
+}
+
+
+
+.inputs{
+    width: 60vw;
+    margin-top: 30px;
+    display: flex;
+}
+
+.SectionDialog{
+    display: flex;
+}

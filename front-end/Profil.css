@@ -1,0 +1,46 @@
+.Profile_Box{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    background: #392828;
+    margin-left: 100px;
+    margin-top: 50px;
+    border-radius: 10px;
+    align-items: center;
+}
+.Profile_Box img{
+    padding-top: 30px;
+    height: 180px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.Section2{
+    display: flex;
+}
+
+.Name{
+    font-size: 30px;
+}
+
+.Name_info{
+
+}
+
+.Content_Profile{
+    border: #392828 solid 2px;
+    margin-left: 150px;
+    border-radius: 5px ;
+    width: 80vh;
+    margin-top: 50px;
+    padding-left: 10px;
+}
+
+.Opisanie{
+    background: #392828;
+    border-radius: 10px;
+    width: 38vw;
+    height: 300px;
+    margin-left: 20px;
+}
