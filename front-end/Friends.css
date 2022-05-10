@@ -19,6 +19,9 @@
     height: 85vh;
 }
 
+.Left{
+    margin-left: 10px;
+}
 
 
 .inputs{
@@ -29,4 +32,26 @@
 
 .SectionDialog{
     display: flex;
+}
+
+.Content_friends{
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 70px;
+    width: 14vw;
+    display: flex;
+    align-items: center;
+    background-color: #392828;
+    border-radius: 5px;
+}
+
+.Content_friends img{
+    border-radius:100% ;
+    padding-left: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+.Name_friends{
+    padding-left: 10px;
 }

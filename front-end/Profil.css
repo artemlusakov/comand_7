@@ -1,8 +1,8 @@
 .Profile_Box{
     display: flex;
     flex-direction: column;
-    height: 350px;
-    width: 300px;
+    height: 37vh;
+    width: 13vw;
     background: #392828;
     margin-left: 100px;
     margin-top: 50px;
@@ -11,8 +11,8 @@
 }
 .Profile_Box img{
     padding-top: 30px;
-    height: 180px;
-    width: 250px;
+    height: 20vh;
+    width: 10vw;
     border-radius: 10px;
 }
 
@@ -32,7 +32,7 @@
     border: #392828 solid 2px;
     margin-left: 150px;
     border-radius: 5px ;
-    width: 80vh;
+    width: 50vw;
     margin-top: 50px;
     padding-left: 10px;
 }
@@ -40,7 +40,7 @@
 .Opisanie{
     background: #392828;
     border-radius: 10px;
-    width: 38vw;
+    width: 45vw;
     height: 300px;
     margin-left: 20px;
 }
