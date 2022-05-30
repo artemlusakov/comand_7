@@ -14,7 +14,8 @@
 
 .img{
     margin-right:10px;
-    background-color: #1F1C18;
+    background-color: #192ebd;
+    border: 2px solid #FFCF40;
     border-radius: 50%;
     height: 50px;
     width: 50px;
@@ -36,9 +37,18 @@ button{
     border: none;
     height: 25px;
     width: 200px;
+    color: white;
     border-radius:5px ;
 }
 
+button:hover{
+    background-color: #4f60e8;
+    margin-top: 20px;
+    border: none;
+    height: 25px;
+    width: 200px;
+    border-radius:5px ;
+}
 
 .Content{
     padding-top: 10px;
@@ -52,4 +62,3 @@ button{
     border:2px solid #6071ff;
 
 }
-

@@ -1,13 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0fea8ee-bb8a-4023-ad76-db15c17aeb85" name="Default Changelist" comment="" />
+    <list default="true" id="a0fea8ee-bb8a-4023-ad76-db15c17aeb85" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Routings/Route.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Authorizate/Authorizate.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Authorizate/Avthorization.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Nav_bar/Nav_bar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Nav_bar/Nav_bar.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Registraition/Register.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Registraition/Register.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="25s9hCNxzOye8XnQzJFc69BmGB6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -16,6 +55,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -23,6 +63,14 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Student\Documents\GitHub\comand_7\interface\src\components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Student\Documents\GitHub\comand_7\interface\src\UI" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -34,12 +82,16 @@
       <scripts>
         <script value="start" />
       </scripts>
-      <node-interpreter value="project" />
+      <node-interpreter value="node" />
+      <package-manager value="C:\Users\Student\Documents\GitHub\comand_7\interface" />
       <envs />
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="a0fea8ee-bb8a-4023-ad76-db15c17aeb85" name="Default Changelist" comment="" />
@@ -51,10 +103,43 @@
       <workItem from="1646306809671" duration="1783000" />
       <workItem from="1646308635500" duration="1784000" />
       <workItem from="1646310444379" duration="1903000" />
+      <workItem from="1653897506944" duration="103000" />
+      <workItem from="1653897678512" duration="172000" />
+      <workItem from="1653897860821" duration="483000" />
+      <workItem from="1653898363754" duration="9812000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1629" y="205" key="#npm_start" timestamp="1653897845707">
+      <screen x="0" y="0" width="3840" height="1040" />
+    </state>
+    <state x="1629" y="205" key="#npm_start/0.0.3840.1040@0.0.3840.1040" timestamp="1653897845707" />
+    <state x="1699" y="261" key="FileChooserDialogImpl" timestamp="1653897732659">
+      <screen x="0" y="0" width="3840" height="1040" />
+    </state>
+    <state x="1699" y="261" key="FileChooserDialogImpl/0.0.3840.1040@0.0.3840.1040" timestamp="1653897732659" />
+    <state x="1636" y="328" key="jetbrains.nodejs.interpreters-dialog" timestamp="1653897710259">
+      <screen x="0" y="0" width="3840" height="1040" />
+    </state>
+    <state x="1636" y="328" key="jetbrains.nodejs.interpreters-dialog/0.0.3840.1040@0.0.3840.1040" timestamp="1653897710259" />
+    <state x="1576" y="242" key="run.anything.popup" timestamp="1653907811202">
+      <screen x="0" y="0" width="3840" height="1040" />
+    </state>
+    <state x="1576" y="242" key="run.anything.popup/0.0.3840.1040@0.0.3840.1040" timestamp="1653907811202" />
   </component>
 </project>
