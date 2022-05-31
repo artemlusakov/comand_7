@@ -20,20 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0fea8ee-bb8a-4023-ad76-db15c17aeb85" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Routings/Route.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Authorizate/Authorizate.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Authorizate/Avthorization.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Nav_bar/Nav_bar.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Nav_bar/Nav_bar.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Page/Authorizate/Avthorization.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Page/News/News.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Page/News/Nrws.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Content_box/Content.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Content_box/Content.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main-components/css_components.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main-components/icon/icon.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main-components/icon/icon.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Registraition/Register.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Registraition/Register.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Authorizate/Authorizate.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Page/Authorizate/Authorizate.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Authorizate/Avthorization.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Nav_bar/Nav_bar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav_bar/Nav_bar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Nav_bar/Nav_bar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav_bar/Nav_bar.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Registraition/Register.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Page/Registraition/Register.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Registraition/Registr.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Page/Registraition/Registr.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +57,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -65,11 +67,12 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\comand_7\comand_7\interface\src\Page" />
+      <recent name="C:\Users\Student\Documents\GitHub\comand_7\interface\src\UI" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Student\Documents\GitHub\comand_7\interface\src\components" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Student\Documents\GitHub\comand_7\interface\src\UI" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -88,7 +91,7 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -107,11 +110,16 @@
       <workItem from="1653897678512" duration="172000" />
       <workItem from="1653897860821" duration="483000" />
       <workItem from="1653898363754" duration="9812000" />
+      <workItem from="1653993317030" duration="1618000" />
+      <workItem from="1653994964981" duration="1780000" />
+      <workItem from="1654000602434" duration="1561000" />
+      <workItem from="1654002830539" duration="986000" />
+      <workItem from="1654012279730" duration="530000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -123,8 +131,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1687" y="360" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1654003467829">
+      <screen x="0" y="30" width="2560" height="1050" />
+    </state>
+    <state x="1687" y="360" key="#com.intellij.fileTypes.FileTypeChooser/0.30.2560.1050@0.30.2560.1050" timestamp="1654003467829" />
     <state x="1629" y="205" key="#npm_start" timestamp="1653897845707">
       <screen x="0" y="0" width="3840" height="1040" />
     </state>

@@ -9,15 +9,12 @@
 .compani{
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
+    height: 10vh;
+    font-size: 1vw;
 }
-
-.img{
-    margin-right:10px;
-    background-color: #1F1C18;
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
+.Content{
+    width: 15vw;
 }
 
 input{
@@ -26,19 +23,10 @@ input{
     align-items: center;
     margin-top: 30px;
     height: 30px;
-    font-size: 20px;
+    width: 8vw;
+    font-size: 2vh;
     border-radius:5px ;
 }
-
-button{
-    background-color:#6071ff ;
-    margin-top: 20px;
-    border: none;
-    height: 25px;
-    width: 200px;
-    border-radius:5px ;
-}
-
 
 .Content{
     padding-top: 10px;
@@ -46,8 +34,8 @@ button{
     align-items: center;
     flex-direction: column;
     border-radius:5px ;
-    width: 300px;
-    height: 260px;
+    width: 10vw;
+    height: 35vh;
     background-color: #fff;
     border:2px solid #6071ff;
 
