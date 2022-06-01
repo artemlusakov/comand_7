@@ -20,22 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0fea8ee-bb8a-4023-ad76-db15c17aeb85" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Page/Authorizate/Avthorization.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Page/News/News.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Page/News/Nrws.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Content_box/Content.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Content_box/Content.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/main-components/css_components.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/main-components/icon/icon.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/main-components/icon/icon.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/state.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Authorizate/Authorizate.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Page/Authorizate/Authorizate.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Authorizate/Avthorization.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Nav_bar/Nav_bar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav_bar/Nav_bar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Nav_bar/Nav_bar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav_bar/Nav_bar.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Registraition/Register.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Page/Registraition/Register.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Registraition/Registr.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Page/Registraition/Registr.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Page/Authorizate/Authorizate.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Page/Authorizate/Authorizate.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Page/Registraition/Registr.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Page/Registraition/Registr.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main-components/css_components.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-components/Button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,6 +105,8 @@
       <workItem from="1654000602434" duration="1561000" />
       <workItem from="1654002830539" duration="986000" />
       <workItem from="1654012279730" duration="530000" />
+      <workItem from="1654075950317" duration="1325000" />
+      <workItem from="1654090565729" duration="413000" />
     </task>
     <servers />
   </component>

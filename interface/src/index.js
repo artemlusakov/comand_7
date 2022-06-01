@@ -4,9 +4,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from "react-router-dom";
 
+import state from "./Redux/state";
+
 ReactDOM.render(
       <BrowserRouter>
-            <App />
+            ReactDom.render(<App appstate={state}/>)
       </BrowserRouter>,
   document.getElementById('root')
 );

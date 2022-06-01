@@ -1,21 +1,24 @@
-.button_blue{
-    background-color:#6071ff ;
+.btn{
     margin-top: 20px;
     border: none;
-    height: 25px;
-    width: 8vw;
-    color: white;
     border-radius:5px ;
     text-decoration: none;
 }
 
-.button_blue:hover{
-    background-color: #4f60e8;
+.btn:hover{
     margin-top: 20px;
     border: none;
-    height: 25px;
-    width: 8vw;
     border-radius:5px ;
+}
+
+.Blue{
+    background-color: #4f60e8;
+    color: #fff;
+}
+
+.size_normal{
+    width: 8vw;
+    height: 25px;
 }
 
 .Box a{

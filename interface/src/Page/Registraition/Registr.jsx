@@ -1,5 +1,5 @@
 import s from "./Register.module.css"
-import si from "../../components/main-components/css_components.module.css";
+import btn from "../../components/main-components/Button.css";
 import Icon from "../../components/main-components/icon/icon";
 
 function Registr (){
@@ -14,7 +14,7 @@ function Registr (){
                 <input type="email" placeholder={"user@gmail.com"}/>
                 <input type="password" placeholder={"Введите пароль"}/>
                 <input type="password" placeholder={"Повторите пароль"}/>
-                <button className={si.button_blue}>Зарегестрироватся</button>
+                <button className={`${btn.but} ${btn.Blue} ${btn.size_normal}`}>Зарегестрироватся</button>
             </div>
         </div>
     )
