@@ -1,0 +1,28 @@
+.btn{
+    margin-top: 20px;
+    border: none;
+    border-radius:5px ;
+    text-decoration: none;
+}
+
+.btn:hover{
+    margin-top: 20px;
+    border: none;
+    border-radius:5px ;
+}
+
+.Blue{
+    background-color: #4f60e8;
+    color: #fff;
+}
+
+
+.size_normal{
+    width: 8vw;
+    height: 25px;
+}
+
+.Box a{
+    text-decoration: none;
+    color: #f6f6f6;
+}

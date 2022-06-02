@@ -2,11 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter} from "react-router-dom";
+
+import state from "./Redux/state";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+      <BrowserRouter>
+          <App appstate={state}/>
+      </BrowserRouter>,
   document.getElementById('root')
 );
 

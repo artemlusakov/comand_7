@@ -1,0 +1,45 @@
+.All_content_nav{
+    height: 70px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f6f6f6;
+}
+
+.Logo{
+    font-size: 50px ;
+    color: #4f60e8;
+}
+
+.Navigate{
+    display: flex;
+    align-items: center;
+}
+
+.Nav{
+    width: 15vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Profil{
+    background-color: #1F1C18;
+    border-radius:100% ;
+    border: 2px solid #FFCF40;
+    height: 50px;
+    width: 50px;
+}
+
+.Navigate a{
+    text-decoration: none;
+    border-radius: 5px;
+    border: solid 2px #4f60e8;
+    margin-left:15px ;
+    font-size: 22px;
+}
+
+.Navigate a:hover{
+    background-color: #4f60e8;
+    color: white;
+}
