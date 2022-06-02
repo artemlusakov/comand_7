@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="287b82e9-3fb6-4c7b-899e-c6bcbea8ddfa" name="Default Changelist" comment="" />
+    <list default="true" id="287b82e9-3fb6-4c7b-899e-c6bcbea8ddfa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/front-end/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/interface/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/src/components/Nav_bar/Nav_bar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/interface/src/components/Nav_bar/Nav_bar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/src/components/main-components/Button.css" beforeDir="false" afterPath="$PROJECT_DIR$/interface/src/components/main-components/Button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/interface/src/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +43,7 @@
       <workItem from="1652105922834" duration="1393000" />
       <workItem from="1652184243566" duration="2122000" />
       <workItem from="1653897256671" duration="249000" />
+      <workItem from="1654158081705" duration="24000" />
     </task>
     <servers />
   </component>
@@ -44,10 +51,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2550" y="267" key="FileChooserDialogImpl" timestamp="1653897504191">
+    <state x="2550" y="267" key="FileChooserDialogImpl" timestamp="1654158103801">
       <screen x="0" y="0" width="3840" height="1040" />
     </state>
-    <state x="2550" y="267" key="FileChooserDialogImpl/0.0.3840.1040@0.0.3840.1040" timestamp="1653897504191" />
+    <state x="2550" y="267" key="FileChooserDialogImpl/0.0.3840.1040@0.0.3840.1040" timestamp="1654158103801" />
     <state x="1700" y="300" key="FileChooserDialogImpl/0.30.2560.1050@0.30.2560.1050" timestamp="1652186986875" />
   </component>
 </project>

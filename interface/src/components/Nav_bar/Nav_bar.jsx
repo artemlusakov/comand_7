@@ -6,7 +6,7 @@ const NavBar = () => {
     return (
         <div className={s.All_content_nav}>
             <div className={s.Logo}>
-                Timskord
+                Teamscord
             </div>
 
             <div className={s.Nav}>

@@ -8,7 +8,7 @@ import state from "./Redux/state";
 
 ReactDOM.render(
       <BrowserRouter>
-            ReactDom.render(<App appstate={state}/>)
+          <App appstate={state}/>
       </BrowserRouter>,
   document.getElementById('root')
 );
