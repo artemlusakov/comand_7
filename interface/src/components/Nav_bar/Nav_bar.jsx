@@ -12,7 +12,7 @@ const NavBar = () => {
             <div className={s.Nav}>
             <div className={s.Navigate}>
                 <NavLink to="/News">News</NavLink>
-                <NavLink to="/Home">Home</NavLink>
+                <NavLink to="/Profil">Profil</NavLink>
                 <NavLink to="/Home">Home</NavLink>
                 <NavLink to="/Home">Home</NavLink>
             </div>

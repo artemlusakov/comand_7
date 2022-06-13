@@ -1,0 +1,18 @@
+.All_Component_Profil{
+    display: flex;
+    align-items: center;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.Info_Profil{
+    border: solid 1px #212121;
+    height: 80vh;
+    width: 20vw;
+}
+
+.Content_Profil{
+    border: solid 1px #212121;
+    height: 70vh;
+    width: 80vw;
+}

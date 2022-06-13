@@ -14,7 +14,7 @@ function Authorizate (){
 
                 <input type="email" placeholder={"user@gmail.com"}/>
                 <input type="password" placeholder={"Введите пароль"}/>
-                <button className={`${btn.but} ${btn.Blue}`}>Войти</button>
+                <button className={`${btn.but} ${btn.Blue}`}><NavLink to="/Vhod">Войти</NavLink></button>
                 <button className={`${btn.but} ${btn.Blue}`}> <NavLink to="/Registr">Зарегестрироваться</NavLink></button>
             </div>
         </div>
