@@ -48,7 +48,7 @@ namespace BlazorWebAssemblySignalRApp.Server.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutMassageToPhotos(int id, MassageToPhotos massageToPhotos)
         {
-            if (id != massageToPhotos.photo_id)
+            if (id != massageToPhotos.Photo_id)
             {
                 return BadRequest();
             }
@@ -86,7 +86,7 @@ namespace BlazorWebAssemblySignalRApp.Server.Controllers
             }
             catch (DbUpdateException)
             {
-                if (MassageToPhotosExists(massageToPhotos.photo_id))
+                if (MassageToPhotosExists(massageToPhotos.Photo_id))
                 {
                     return Conflict();
                 }
@@ -96,7 +96,7 @@ namespace BlazorWebAssemblySignalRApp.Server.Controllers
                 }
             }
 
-            return CreatedAtAction("GetMassageToPhotos", new { id = massageToPhotos.photo_id }, massageToPhotos);
+            return CreatedAtAction("GetMassageToPhotos", new { id = massageToPhotos.Photo_id }, massageToPhotos);
         }
 
         // DELETE: api/MassageToPhotos/5
@@ -117,7 +117,7 @@ namespace BlazorWebAssemblySignalRApp.Server.Controllers
 
         private bool MassageToPhotosExists(int id)
         {
-            return _context.MassageToPhotos.Any(e => e.photo_id == id);
+            return _context.MassageToPhotos.Any(e => e.Photo_id == id);
         }
     }
 }

@@ -37,4 +37,5 @@ namespace BlazorWebAssemblySignalRApp.Server.Controllers
             return NoContent();
         }
 
-    } т 
+    }
+}

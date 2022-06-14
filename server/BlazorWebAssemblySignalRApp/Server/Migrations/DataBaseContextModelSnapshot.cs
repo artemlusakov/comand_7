@@ -17,7 +17,7 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.3")
+                .HasAnnotation("ProductVersion", "6.0.5")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
@@ -34,7 +34,7 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("time_creation")
+                    b.Property<DateTime>("Time_creation")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
@@ -50,15 +50,15 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id_friends"), 1L, 1);
 
-                    b.Property<DateTime>("time_creation")
+                    b.Property<DateTime>("Time_creation")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("user_id")
+                    b.Property<int>("User_id")
                         .HasColumnType("int");
 
                     b.HasKey("Id_friends");
 
-                    b.HasIndex("user_id");
+                    b.HasIndex("User_id");
 
                     b.ToTable("Friends");
                 });
@@ -71,40 +71,40 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id_massages"), 1L, 1);
 
-                    b.Property<int>("dialog_id")
+                    b.Property<int>("Dialog_id")
                         .HasColumnType("int");
 
-                    b.Property<string>("text")
+                    b.Property<string>("Text")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("text_changed")
+                    b.Property<bool>("Text_changed")
                         .HasColumnType("bit");
 
-                    b.Property<DateTime>("time_creation")
+                    b.Property<DateTime>("Time_creation")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id_massages");
 
-                    b.HasIndex("dialog_id");
+                    b.HasIndex("Dialog_id");
 
                     b.ToTable("Massages");
                 });
 
             modelBuilder.Entity("BlazorWebAssemblySignalRApp.Models.MassageToPhotos", b =>
                 {
-                    b.Property<int>("photo_id")
+                    b.Property<int>("Photo_id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("photo_id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Photo_id"), 1L, 1);
 
-                    b.Property<int>("massage_id")
+                    b.Property<int>("Massage_id")
                         .HasColumnType("int");
 
-                    b.HasKey("photo_id");
+                    b.HasKey("Photo_id");
 
-                    b.HasIndex("massage_id");
+                    b.HasIndex("Massage_id");
 
                     b.ToTable("MassageToPhotos");
                 });
@@ -122,7 +122,7 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("time_creation")
+                    b.Property<DateTime>("Time_creation")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Photo_id");
@@ -141,17 +141,15 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
                     b.Property<int>("Id_dialogs")
                         .HasColumnType("int");
 
+                    b.Property<int>("User_id")
+                        .HasColumnType("int");
+
                     b.Property<bool>("role")
                         .HasColumnType("bit");
-
-                    b.Property<int>("user_id")
-                        .HasColumnType("int");
 
                     b.HasKey("Id_roles");
 
                     b.HasIndex("Id_dialogs");
-
-                    b.HasIndex("user_id");
 
                     b.ToTable("Roles");
                 });
@@ -159,10 +157,7 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
             modelBuilder.Entity("BlazorWebAssemblySignalRApp.Models.User", b =>
                 {
                     b.Property<int>("Id_user")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id_user"), 1L, 1);
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -176,12 +171,12 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("time_creation")
+                    b.Property<DateTime>("Time_creation")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id_user");
 
-                    b.ToTable("Users");
+                    b.ToTable("User");
                 });
 
             modelBuilder.Entity("BlazorWebAssemblySignalRApp.Models.UserToDialogs", b =>
@@ -192,20 +187,20 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id_user_to_dialogs"), 1L, 1);
 
-                    b.Property<int>("dialogs_id")
+                    b.Property<int>("Dialogs_id")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("time_creation")
+                    b.Property<DateTime>("Time_creation")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("user_id")
+                    b.Property<int>("User_id")
                         .HasColumnType("int");
 
                     b.HasKey("Id_user_to_dialogs");
 
-                    b.HasIndex("dialogs_id");
+                    b.HasIndex("Dialogs_id");
 
-                    b.HasIndex("user_id");
+                    b.HasIndex("User_id");
 
                     b.ToTable("UserToDialogs");
                 });
@@ -213,8 +208,8 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
             modelBuilder.Entity("BlazorWebAssemblySignalRApp.Models.Friends", b =>
                 {
                     b.HasOne("BlazorWebAssemblySignalRApp.Models.User", "User")
-                        .WithMany("friends")
-                        .HasForeignKey("user_id")
+                        .WithMany("Friends")
+                        .HasForeignKey("User_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -224,8 +219,8 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
             modelBuilder.Entity("BlazorWebAssemblySignalRApp.Models.Massages", b =>
                 {
                     b.HasOne("BlazorWebAssemblySignalRApp.Models.Dialogs", "Dialogs")
-                        .WithMany("massages")
-                        .HasForeignKey("dialog_id")
+                        .WithMany("Massages")
+                        .HasForeignKey("Dialog_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -235,8 +230,8 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
             modelBuilder.Entity("BlazorWebAssemblySignalRApp.Models.MassageToPhotos", b =>
                 {
                     b.HasOne("BlazorWebAssemblySignalRApp.Models.Massages", "Massages")
-                        .WithMany("massageToPhotos")
-                        .HasForeignKey("massage_id")
+                        .WithMany("MassageToPhotos")
+                        .HasForeignKey("Massage_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -245,45 +240,48 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
 
             modelBuilder.Entity("BlazorWebAssemblySignalRApp.Models.Photo", b =>
                 {
-                    b.HasOne("BlazorWebAssemblySignalRApp.Models.MassageToPhotos", "massageToPhotos")
+                    b.HasOne("BlazorWebAssemblySignalRApp.Models.MassageToPhotos", "MassageToPhotos")
                         .WithMany("Photos")
                         .HasForeignKey("Photo_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("massageToPhotos");
+                    b.Navigation("MassageToPhotos");
                 });
 
             modelBuilder.Entity("BlazorWebAssemblySignalRApp.Models.Role", b =>
                 {
                     b.HasOne("BlazorWebAssemblySignalRApp.Models.Dialogs", "Dialogs")
-                        .WithMany("roles")
+                        .WithMany("Roles")
                         .HasForeignKey("Id_dialogs")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("BlazorWebAssemblySignalRApp.Models.User", "User")
-                        .WithMany("roles")
-                        .HasForeignKey("user_id")
+                    b.Navigation("Dialogs");
+                });
+
+            modelBuilder.Entity("BlazorWebAssemblySignalRApp.Models.User", b =>
+                {
+                    b.HasOne("BlazorWebAssemblySignalRApp.Models.Role", "Roles")
+                        .WithMany("User")
+                        .HasForeignKey("Id_user")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Dialogs");
-
-                    b.Navigation("User");
+                    b.Navigation("Roles");
                 });
 
             modelBuilder.Entity("BlazorWebAssemblySignalRApp.Models.UserToDialogs", b =>
                 {
                     b.HasOne("BlazorWebAssemblySignalRApp.Models.Dialogs", "Dialogs")
-                        .WithMany("usersToDialogs")
-                        .HasForeignKey("dialogs_id")
+                        .WithMany("UserToDialogs")
+                        .HasForeignKey("Dialogs_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("BlazorWebAssemblySignalRApp.Models.User", "User")
-                        .WithMany("usersToDialogs")
-                        .HasForeignKey("user_id")
+                        .WithMany("UserToDialogs")
+                        .HasForeignKey("User_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -294,16 +292,16 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
 
             modelBuilder.Entity("BlazorWebAssemblySignalRApp.Models.Dialogs", b =>
                 {
-                    b.Navigation("massages");
+                    b.Navigation("Massages");
 
-                    b.Navigation("roles");
+                    b.Navigation("Roles");
 
-                    b.Navigation("usersToDialogs");
+                    b.Navigation("UserToDialogs");
                 });
 
             modelBuilder.Entity("BlazorWebAssemblySignalRApp.Models.Massages", b =>
                 {
-                    b.Navigation("massageToPhotos");
+                    b.Navigation("MassageToPhotos");
                 });
 
             modelBuilder.Entity("BlazorWebAssemblySignalRApp.Models.MassageToPhotos", b =>
@@ -311,13 +309,16 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
                     b.Navigation("Photos");
                 });
 
+            modelBuilder.Entity("BlazorWebAssemblySignalRApp.Models.Role", b =>
+                {
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("BlazorWebAssemblySignalRApp.Models.User", b =>
                 {
-                    b.Navigation("friends");
+                    b.Navigation("Friends");
 
-                    b.Navigation("roles");
-
-                    b.Navigation("usersToDialogs");
+                    b.Navigation("UserToDialogs");
                 });
 #pragma warning restore 612, 618
         }
