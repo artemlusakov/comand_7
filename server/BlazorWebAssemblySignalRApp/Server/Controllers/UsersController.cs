@@ -8,7 +8,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using BlazorWebAssemblySignalRApp.Data;
 using BlazorWebAssemblySignalRApp.Models;
-using BlazorWebAssemblySignalRApp.Server.Valudation;
 
 namespace BlazorWebAssemblySignalRApp.Server.Controllers
 {
@@ -18,11 +17,10 @@ namespace BlazorWebAssemblySignalRApp.Server.Controllers
     {
         private readonly DataBaseContext _context;
 
-        private readonly EmailValidation _validation;
 
         public UsersController(DataBaseContext context)
         {
-            _validation = new EmailValidation();
+            
             _context = context;
         }
 
@@ -83,10 +81,7 @@ namespace BlazorWebAssemblySignalRApp.Server.Controllers
         [HttpPost]
         public async Task<ActionResult<User>> PostUser(User user)
         {
-            if (!_validation.IsValid(user.Email))
-            {
-                return Problem("Incorrect Email");
-            }
+           
 
             _context.User.Add(user);
             await _context.SaveChangesAsync();

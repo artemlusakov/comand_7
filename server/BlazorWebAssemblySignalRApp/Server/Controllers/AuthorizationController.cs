@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using BlazorWebAssemblySignalRApp.Data;
 using BlazorWebAssemblySignalRApp.Models;
+using BlazorWebAssemblySignalRApp.Server.Valudation;
 
 namespace BlazorWebAssemblySignalRApp.Server.Controllers
 
@@ -17,10 +18,13 @@ namespace BlazorWebAssemblySignalRApp.Server.Controllers
 public class AuthorizationController : Controller
     {
         private readonly DataBaseContext _context;
+        private readonly EmailValidation _validation;
 
         public AuthorizationController(DataBaseContext context)
         {
+            _validation = new EmailValidation();
             _context = context;
+
         }
 
         // POST: api/Users
@@ -28,6 +32,12 @@ public class AuthorizationController : Controller
         [HttpPost]
         public async Task<ActionResult<User>> PostUser(User testUser)
         {
+            if (!_validation.IsValid(testUser.Email))
+            {
+                return Problem("Incorrect Email");
+            }
+
+
             var user = await _context.User.FindAsync(testUser.Id_user);
 
             if (user == null && testUser.Email == user.Email && testUser.Password == user.Password)
