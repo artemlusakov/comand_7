@@ -1,0 +1,19 @@
+.All_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 30px;
+}
+
+.bloc1{
+    width: 20vw;
+    border: 1px solid #212121;
+}
+
+.bloc2{
+    width: 70vw;
+    border: 1px solid #212121;
+}

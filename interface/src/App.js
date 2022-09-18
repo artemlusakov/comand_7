@@ -6,6 +6,7 @@ import NavBar from "./components/Nav_bar/Nav_bar";
 import Content from "./components/Content_box/Content";
 import Profil from "./Page/Profil/Profil";
 import User from "./Page/UsersState/User";
+import News from "./Page/News/News";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
               <Route path='/Registr' element={<Registr/>}/>
               <Route path='/Profil' element={<Profil/>}/>
               <Route path='/User' element={<User/>}/>
+              <Route path='/News' element={<News/>}/>
 
           </Routes>
 

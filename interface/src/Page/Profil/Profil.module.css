@@ -1,8 +1,8 @@
 .All_Component_Profil{
     display: flex;
-    align-items: center;
     margin-left: 300px;
     margin-right: 300px;
+    padding-top: 30px;
 }
 
 .Info_Profil{
@@ -13,6 +13,34 @@
 
 .Content_Profil{
     border: solid 1px #212121;
-    height: 70vh;
+    height: 80vh;
     width: 80vw;
+}
+
+.Profil_avatar{
+    height: 200px;
+    width: 200px;
+}
+
+.Profil_avatar img{
+    height: 200px;
+    width: 200px;
+    border-radius:10px ;
+}
+
+.Profil_avatar_content{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.Profil_name{
+    font-size:30px ;
+
+}
+
+.info_user{
+    height: 200px;
+    width: 200px;
+    font-size: 30px;
+    margin-top:20px;
 }
