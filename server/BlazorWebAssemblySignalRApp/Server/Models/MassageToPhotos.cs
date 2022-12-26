@@ -8,6 +8,6 @@ namespace BlazorWebAssemblySignalRApp.Models
         public int Photo_id { get; set; }
         public int Massage_id { get; set; }
         public Massages? Massages { get; set; }
-        public List<Photo> Photos { get; set; }
+        public Photo? Photos { get; set; }
     }
 }

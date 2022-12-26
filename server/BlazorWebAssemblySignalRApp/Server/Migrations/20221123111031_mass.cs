@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace BlazorWebAssemblySignalRApp.Server.Migrations
 {
-    public partial class init : Migration
+    public partial class mass : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -21,6 +21,21 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Dialogs", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Photos",
+                columns: table => new
+                {
+                    Photo_id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Path = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Time_creation = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Photos", x => x.Photo_id);
                 });
 
             migrationBuilder.CreateTable(
@@ -70,8 +85,7 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
                 name: "MassageToPhotos",
                 columns: table => new
                 {
-                    Photo_id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Photo_id = table.Column<int>(type: "int", nullable: false),
                     Massage_id = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -82,6 +96,12 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
                         column: x => x.Massage_id,
                         principalTable: "Massages",
                         principalColumn: "Id_massages",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_MassageToPhotos_Photos_Photo_id",
+                        column: x => x.Photo_id,
+                        principalTable: "Photos",
+                        principalColumn: "Photo_id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -103,26 +123,6 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
                         column: x => x.Id_user,
                         principalTable: "Roles",
                         principalColumn: "Id_roles",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Photos",
-                columns: table => new
-                {
-                    Photo_id = table.Column<int>(type: "int", nullable: false),
-                    Path = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Time_creation = table.Column<DateTime>(type: "datetime2", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Photos", x => x.Photo_id);
-                    table.ForeignKey(
-                        name: "FK_Photos_MassageToPhotos_Photo_id",
-                        column: x => x.Photo_id,
-                        principalTable: "MassageToPhotos",
-                        principalColumn: "Photo_id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -154,17 +154,17 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     User_id = table.Column<int>(type: "int", nullable: false),
                     Dialogs_id = table.Column<int>(type: "int", nullable: false),
-                    Time_creation = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    Time_creation = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    DialogsId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_UserToDialogs", x => x.Id_user_to_dialogs);
                     table.ForeignKey(
-                        name: "FK_UserToDialogs_Dialogs_Dialogs_id",
-                        column: x => x.Dialogs_id,
+                        name: "FK_UserToDialogs_Dialogs_DialogsId",
+                        column: x => x.DialogsId,
                         principalTable: "Dialogs",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_UserToDialogs_User_User_id",
                         column: x => x.User_id,
@@ -194,9 +194,9 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
                 column: "Id_dialogs");
 
             migrationBuilder.CreateIndex(
-                name: "IX_UserToDialogs_Dialogs_id",
+                name: "IX_UserToDialogs_DialogsId",
                 table: "UserToDialogs",
-                column: "Dialogs_id");
+                column: "DialogsId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_UserToDialogs_User_id",
@@ -210,19 +210,19 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
                 name: "Friends");
 
             migrationBuilder.DropTable(
-                name: "Photos");
+                name: "MassageToPhotos");
 
             migrationBuilder.DropTable(
                 name: "UserToDialogs");
 
             migrationBuilder.DropTable(
-                name: "MassageToPhotos");
+                name: "Massages");
+
+            migrationBuilder.DropTable(
+                name: "Photos");
 
             migrationBuilder.DropTable(
                 name: "User");
-
-            migrationBuilder.DropTable(
-                name: "Massages");
 
             migrationBuilder.DropTable(
                 name: "Roles");

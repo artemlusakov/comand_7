@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlazorWebAssemblySignalRApp.Server.Migrations
 {
     [DbContext(typeof(DataBaseContext))]
-    [Migration("20220614130333_init")]
-    partial class init
+    [Migration("20221123111031_mass")]
+    partial class mass
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -96,10 +96,7 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
             modelBuilder.Entity("BlazorWebAssemblySignalRApp.Models.MassageToPhotos", b =>
                 {
                     b.Property<int>("Photo_id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Photo_id"), 1L, 1);
 
                     b.Property<int>("Massage_id")
                         .HasColumnType("int");
@@ -114,7 +111,10 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
             modelBuilder.Entity("BlazorWebAssemblySignalRApp.Models.Photo", b =>
                 {
                     b.Property<int>("Photo_id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Photo_id"), 1L, 1);
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -189,6 +189,9 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id_user_to_dialogs"), 1L, 1);
 
+                    b.Property<int?>("DialogsId")
+                        .HasColumnType("int");
+
                     b.Property<int>("Dialogs_id")
                         .HasColumnType("int");
 
@@ -200,7 +203,7 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
 
                     b.HasKey("Id_user_to_dialogs");
 
-                    b.HasIndex("Dialogs_id");
+                    b.HasIndex("DialogsId");
 
                     b.HasIndex("User_id");
 
@@ -237,18 +240,15 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Massages");
-                });
-
-            modelBuilder.Entity("BlazorWebAssemblySignalRApp.Models.Photo", b =>
-                {
-                    b.HasOne("BlazorWebAssemblySignalRApp.Models.MassageToPhotos", "MassageToPhotos")
-                        .WithMany("Photos")
+                    b.HasOne("BlazorWebAssemblySignalRApp.Models.Photo", "Photos")
+                        .WithMany("MassageToPhotos")
                         .HasForeignKey("Photo_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("MassageToPhotos");
+                    b.Navigation("Massages");
+
+                    b.Navigation("Photos");
                 });
 
             modelBuilder.Entity("BlazorWebAssemblySignalRApp.Models.Role", b =>
@@ -277,9 +277,7 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
                 {
                     b.HasOne("BlazorWebAssemblySignalRApp.Models.Dialogs", "Dialogs")
                         .WithMany("UserToDialogs")
-                        .HasForeignKey("Dialogs_id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("DialogsId");
 
                     b.HasOne("BlazorWebAssemblySignalRApp.Models.User", "User")
                         .WithMany("UserToDialogs")
@@ -306,9 +304,9 @@ namespace BlazorWebAssemblySignalRApp.Server.Migrations
                     b.Navigation("MassageToPhotos");
                 });
 
-            modelBuilder.Entity("BlazorWebAssemblySignalRApp.Models.MassageToPhotos", b =>
+            modelBuilder.Entity("BlazorWebAssemblySignalRApp.Models.Photo", b =>
                 {
-                    b.Navigation("Photos");
+                    b.Navigation("MassageToPhotos");
                 });
 
             modelBuilder.Entity("BlazorWebAssemblySignalRApp.Models.Role", b =>

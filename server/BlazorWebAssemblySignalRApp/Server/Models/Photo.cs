@@ -10,6 +10,6 @@ namespace BlazorWebAssemblySignalRApp.Models
         public string Description { get; set; } = string.Empty;
         public DateTime Time_creation { get; set; }
 
-        public MassageToPhotos? MassageToPhotos { get; set; }
+        public List<MassageToPhotos> MassageToPhotos { get; set; }
     }
 }

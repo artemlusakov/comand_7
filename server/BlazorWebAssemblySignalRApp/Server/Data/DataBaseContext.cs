@@ -19,9 +19,9 @@ namespace BlazorWebAssemblySignalRApp.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Photo>()
-                .HasOne(d => d.MassageToPhotos)
-                .WithMany(f => f.Photos)
+            modelBuilder.Entity<MassageToPhotos>()
+                .HasOne(d => d.Photos)
+                .WithMany(f => f.MassageToPhotos)
                 .HasForeignKey(b => b.Photo_id);
 
             modelBuilder.Entity<MassageToPhotos>()
@@ -54,10 +54,6 @@ namespace BlazorWebAssemblySignalRApp.Data
                 .WithMany(f => f.UserToDialogs)
                 .HasForeignKey(r => r.User_id);
 
-            modelBuilder.Entity<UserToDialogs>()
-                .HasOne(d => d.Dialogs)
-                .WithMany(f => f.UserToDialogs)
-                .HasForeignKey(t => t.Dialogs_id);
         }
     }
 
